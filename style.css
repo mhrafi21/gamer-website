@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -170,6 +170,7 @@ header .hero .container .col p {
   display: grid;
   text-align: center;
 }
+
 .gamer-sec .container .row .col-2 {
   display: flex;
   flex-direction: column;
@@ -184,7 +185,7 @@ header .hero .container .col p {
 }
 .gamer-sec .container .row .col-2 .g-des {
   color: var(--paragraph);
-  text-align: center;
+  text-align: right;
 }
 .gamer-sec .container .row .col-2 h3 p small {
 }
@@ -226,45 +227,20 @@ header .hero .container .col p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.online-game .container .row .col .sup{
-  position: absolute;
-  top:0;
-  bottom: 0;
-  right:0;
-  left: 0;
-  background-color: black;
-  opacity: 0.7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition:all 1000ms ease-in-out;
-  color:#ff42a5;
-  border-radius: 1rem;
-  border:0.3rem solid #ff42a5;
-}
+
 .online-game .container .row .col .sup .sup-icon{
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  gap: 1rem;
 }
 .online-game .container .row .col .sup .sup-icon i{
-      font-size: 2rem;
-      color: var(--white);
-      padding: 1.5rem;
-      border-radius: 50%;
-      color: gray;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  font-size: 2rem;
+  color:var(--white);
+  padding:1.5rem;
+  border-radius: 50%;
+  background-color: #fff;
 }
-.online-game .container .row .col .col-sup:hover {
-  position: relative;
-}
-
-
 .online-game .container .row .col > p {
   text-align: center;
   margin-top: 1rem;
@@ -360,6 +336,7 @@ header .hero .container .col p {
   height: 50px;
   object-fit: cover;
 }
+
 .des-game .container .row .col > div:hover {
   border: 0.1rem solid #ff42a5;
   border-radius: 3rem;
@@ -377,9 +354,12 @@ header .hero .container .col p {
   .des-game .container .row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+   
   }
+  
 }
 /* main */
+
 /* footer */
 .footer {
   background-color: var(--black);
@@ -410,6 +390,7 @@ header .hero .container .col p {
   text-align: center;
   margin-top: 2rem;
 }
+
 .footer .container .link-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -426,8 +407,10 @@ header .hero .container .col p {
   margin: 0 auto;
   padding-top: 2rem;
 }
+
 .footer .container .social-row .col > a {
   color: var(--white);
+  font-size: 2.4rem;
 }
 .footer .container .privacy .row {
   display: grid;
