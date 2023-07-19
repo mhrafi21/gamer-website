@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -170,7 +170,6 @@ header .hero .container .col p {
   display: grid;
   text-align: center;
 }
-
 .gamer-sec .container .row .col-2 {
   display: flex;
   flex-direction: column;
@@ -361,7 +360,6 @@ header .hero .container .col p {
   height: 50px;
   object-fit: cover;
 }
-
 .des-game .container .row .col > div:hover {
   border: 0.1rem solid #ff42a5;
   border-radius: 3rem;
@@ -379,12 +377,9 @@ header .hero .container .col p {
   .des-game .container .row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-   
   }
-  
 }
 /* main */
-
 /* footer */
 .footer {
   background-color: var(--black);
@@ -415,7 +410,6 @@ header .hero .container .col p {
   text-align: center;
   margin-top: 2rem;
 }
-
 .footer .container .link-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -432,7 +426,6 @@ header .hero .container .col p {
   margin: 0 auto;
   padding-top: 2rem;
 }
-
 .footer .container .social-row .col > a {
   color: var(--white);
 }
