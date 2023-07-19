@@ -29,9 +29,6 @@ body {
   --red: red;
   --btn-color: #4ec5f7;
 }
-p{
-    font-size: 0.8rem;
-}
 .img {
   width: 100%;
   object-fit: cover;
