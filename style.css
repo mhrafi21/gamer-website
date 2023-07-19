@@ -153,8 +153,7 @@ header .hero .container .hero-row .col-1{
 
 }
 .gamer-sec .container .row{
-    display: flex;
-    flex-direction: column-reverse;
+    display: grid;
 }
 
 .gamer-sec .container .row .col-2{
@@ -180,8 +179,9 @@ header .hero .container .hero-row .col-1{
     font-weight: 700;
 }
 @media screen and (min-width:768px)  {
-   section .gamer-sec .container .row{
-        display: flex;
+    .gamer-sec .container .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
 /* gamer */
@@ -279,7 +279,7 @@ color:var(--black)
 }
 /* download */
 .des-game{
-    margin-top:10rem;
+    margin:10rem 0rem 2rem 0rem;
 }
 .des-game .container .row{
     display: grid;
@@ -322,6 +322,7 @@ color:var(--black)
     align-items: center;
     justify-content: center;
     gap:1rem;
+    padding-top:2rem;
 }
 .footer .container .f-title h3{
     color:var(--white);
@@ -353,40 +354,56 @@ color:var(--black)
 .footer .container .social-row{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width:20%;
+    text-align: center;
     margin:0 auto;
+    padding-top:2rem;
 }
+
 .footer .container .social-row .col > a{
     color:var(--white)
 }
 .footer .container .privacy .row{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
+    width:80%;
     margin:0 auto;
+    text-align: center;
+    padding-top:2rem;
 
 }
-.footer .container .privacy .row .col > a{
-    color:var(--white)
+.footer .container .privacy .row .col small > a{
+    color:var(--paragraph);
+    font-size: 0.6rem;
+}
+.footer .container .copy-right {
+    color:var(--paragraph);
+    text-align: center;
+     font-size: 0.8rem;
+     padding-top:2rem;
+
+    
 }
 @media screen and (min-width:768px) {
     .footer .container .link-row{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     width:60%;
-    margin:0 auto
+    margin:0 auto;
+    padding-top:2rem;
 }
 .footer .container .social-row{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     width:40%;
     margin:0 auto;
+    padding-top:2rem;
 }
 .footer .container .privacy .row{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    width:50%;
     margin:0 auto;
-    
+    padding-top:2rem;
 }
 }
 /* footer */
