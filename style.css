@@ -7,6 +7,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
 }
 .container {
   max-width: 1200px;
@@ -38,7 +39,7 @@ body {
   display: inline-block;
   border: none;
 }
-h2{
+h2 {
   font-size: 2.5rem;
 }
 .btn-primary {
@@ -211,6 +212,57 @@ header .hero .container .col p {
 .online-game .container .row {
   display: grid;
   gap: 1rem;
+  row-gap: 5rem;
+}
+.online-game .container .row .col {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.online-game .container .row .col .overlay {
+  position: absolute;
+  color: var(--white);
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: var(--black);
+  opacity: 0.7;
+  transform:translateX(-23rem);
+  visibility: hidden;
+  transition : transform 700ms ease-in-out;
+  border-radius:1rem;
+}
+.online-game .container .row .col:hover .overlay{
+  visibility: visible;
+  transform:translateX(0rem);
+  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:1rem;
+}
+.online-game .container .row .col:hover .overlay i{
+  padding:1.4rem;
+  background-color:var(--white);
+  border-radius:50%;
+  color:gray;
+  font-size:1.3rem;
+}
+.online-game .container .row .col .col-sup img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  z-index: 0;
 }
 .online-game .container .o-title {
   text-align: center;
@@ -222,29 +274,16 @@ header .hero .container .col p {
 .online-game .container .o-title h2 {
   color: var(--black);
 }
-.online-game .container .o-title h2 span {
+/* .online-game .container .o-title h2 span {
   background: var(--gradient-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
-.online-game .container .row .col .sup .sup-icon{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-}
-.online-game .container .row .col .sup .sup-icon i{
-  font-size: 2rem;
-  color:var(--white);
-  padding:1.5rem;
-  border-radius: 50%;
-  background-color: #fff;
-}
 .online-game .container .row .col > p {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 20rem;
 }
 @media screen and (min-width: 576px) {
   .online-game .container .row {
@@ -314,13 +353,13 @@ header .hero .container .col p {
 /* download */
 .des-game {
   margin-top: 10rem;
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.des-game .container .row{
+.des-game .container .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -355,9 +394,7 @@ header .hero .container .col p {
   .des-game .container .row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-   
   }
-  
 }
 /* main */
 
